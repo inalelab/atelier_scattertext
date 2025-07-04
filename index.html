@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Atelier Scattertext INA le lab</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      max-width: 960px;
+    }
+    h1, h2 {
+      text-align: left;
+    }
+    iframe {
+      border: 1px solid #ddd;
+      width: 100%;
+      height: 600px;
+      margin-top: 1rem;
+    }
+    .viz {
+      margin-bottom: 4rem;
+    }
+    .readme {
+      margin-bottom: 5rem;
+      padding: 1rem;
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+    }
+    .readme img {
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="readme">
+    <h1 id="atelier-scattertext-pour-la-comparaison-de-corpus-d-missions-tv">Atelier Scattertext pour la comparaison de corpus d&#39;émissions TV</h1>
+    <p>Support pour un atelier de découverte du package Python <a href="https://github.com/JasonKessler/scattertext">Scattertext</a>, à travers une analyse comparative du discours sur les chaînes TV d&#39;information en continu françaises.  </p>
+    <p>Scattertext propose une visualisation très simple et intuitive des termes sous forme de nuages de points répartis en fonction de leur fréquence dans deux corpus A et B. Il introduit également une mesure d&#39;association spécifique de termes à une variable.</p>
+    <p>Le code dans ce dépôt s&#39;appuie sur un jeu de données au format CSV, non fourni, qui porte sur 1 mois x 5 chaînes d&#39;info en continu françaises, incluant la transcription <a href="https://github.com/openai/whisper">Whisper</a>, le genre des locuteurs <a href="https://github.com/ina-foss/inaSpeechSegmenter">Inaspeechsegmenter</a>, ainsi que les notices documentaires décrivant ces programmes. L&#39;accès à ces données est soumis à la signature d&#39;une convention de recherche avec <a href="https://inalelab.hypotheses.org/">le lab INA</a>.</p>
+    <h3 id="exemple-cnews-cliquer-pour-la-version-interactive-">Exemple CNews (cliquer pour la version interactive)</h3>
+    <p>Les points représentent des termes. En ordonnée, la fréquence du terme sur Cnews. En ordonnée, la fréquence du terme sur les autres chaînes.
+    <a href="[https://inalelab.github.io/atelier_scattertext/figs/fig1.html](https://inalelab.github.io/atelier_scattertext/figs/1_cnews_vs_reste_f%C3%A9v22.html"><img src="figs/fig1.png" alt="Scattertext Example"></a>)</p>
+    <p>Sources :</p>
+    <ul>
+    <li>Jason S. Kessler. Scattertext: a Browser-Based Tool for Visualizing how Corpora Differ. <em>ACL System Demonstrations.</em> 2017. <a href="https://arxiv.org/abs/1703.00565">Article</a>, <a href="https://github.com/JasonKessler/scattertext">github</a>  </li>
+    <li>INAspeechsegmenter: Doukhan et al. An Open-Source Speaker Gender Detection Framework for Monitoring Gender Equality. <em>Acoustics Speech and Signal Processing (ICASSP),</em>  2018.  <a href="https://github.com/ina-foss/inaSpeechSegmenter">github</a></li>
+    <li>Whisper : Robust Speech Recognition via Large-Scale Weak Supervision. <em>Proceedings of the 40th International Conference on Machine Learning, PMLR 202:28492-28518, 2023</em>. <a href="https://github.com/openai/whisper">github</a></li>
+    <li>Arthur Lezer. L&#39;analyse des médias au lab INA. <em>INA le lab</em>. 2022. <a href="https://doi.org/10.58079/12yb1">https://doi.org/10.58079/12yb1</a></li>
+    </ul>
+    <p>L&#39;atelier a eu lieu en ligne le 22 avril 2025 dans le cadre du programme d&#39;animation scientifique <a href="https://inalelab.hypotheses.org/ateliers">du lab INA</a>.</p>    
+  </div>
+
+  <h2>Visualisations interactives</h2>
+
+  <div class="viz">
+    <h3>1. CNews vs Reste (Fév 22)</h3>
+    <iframe src="figs/1_cnews_vs_reste_fév22.html"></iframe>
+  </div>
+
+  <div class="viz">
+    <h3>2. CNews vs BFM Notices (Fév 22)</h3>
+    <iframe src="figs/2_cnews_vs_BFM_notices_fév22.html"></iframe>
+  </div>
+
+  <div class="viz">
+    <h3>3. CNews vs BFM Notices with Docs (Fév 22)</h3>
+    <iframe src="figs/3_cnews_vs_BFM_notices_with_docs_fév22.html"></iframe>
+  </div>
+
+  <div class="viz">
+    <h3>4. Femmes vs Hommes (Fév 22)</h3>
+    <iframe src="figs/4_Femmes_Hommes_fév22.html"></iframe>
+  </div>
+
+  <div class="viz">
+    <h3>5. CNews Frequency vs F-Score (Fév 22)</h3>
+    <iframe src="figs/5_CNews_freq_vs_Fscore_fév22.html"></iframe>
+  </div>
+
+  <div class="viz">
+    <h3>6. Femmes x CNews (Fév 22)</h3>
+    <iframe src="figs/6_Femmes_x_CNews_fév22.html"></iframe>
+  </div>
+
+  <div class="viz">
+    <h3>7. "Similarity Explorer" : Religion vs Cnews</h3>
+    <iframe src="figs/7_Religion_on_CNews_similarity_l.html"></iframe>
+  </div>
+
+</body>
+</html>
