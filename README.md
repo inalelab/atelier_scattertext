@@ -10,6 +10,10 @@ Le code dans ce dépôt s'appuie sur un jeu de données au format CSV, non fourn
 Les points représentent des termes. En ordonnée, la fréquence du terme sur Cnews. En ordonnée, la fréquence du terme sur les autres chaînes.
 [![Scattertext Example](figs/fig1.png)]([https://my_org.github.io/atelier_scattertext/figs/fig1.html](https://inalelab.github.io/atelier_scattertext/figs/1_cnews_vs_reste_f%C3%A9v22.html))
 
+### Autres visualisations
+
+Les visualisations créées dans le cadre de l'atelier sont visibles ici en version interactive :
+- [http://inalelab.github.io/atelier_scattertext](https://inalelab.github.io/atelier_scattertext/figs/)
 
 Sources :
 - Jason S. Kessler. Scattertext: a Browser-Based Tool for Visualizing how Corpora Differ. _ACL System Demonstrations._ 2017. [Article](https://arxiv.org/abs/1703.00565), [github](https://github.com/JasonKessler/scattertext)  
