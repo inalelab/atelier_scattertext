@@ -6,6 +6,11 @@ Scattertext propose une visualisation très simple et intuitive des termes sous 
 
 Le code dans ce dépôt s'appuie sur un jeu de données au format CSV, non fourni, qui porte sur 1 mois x 5 chaînes d'info en continu françaises, incluant la transcription [Whisper](https://github.com/openai/whisper), le genre des locuteurs [Inaspeechsegmenter](https://github.com/ina-foss/inaSpeechSegmenter), ainsi que les notices documentaires décrivant ces programmes. L'accès à ces données est soumis à la signature d'une convention de recherche avec [le lab INA](https://inalelab.hypotheses.org/).
 
+### Exemple CNews (cliquer pour la version interactive)
+Les points représentent des termes. En ordonnée, la fréquence du terme sur Cnews. En ordonnée, la fréquence du terme sur les autres chaînes.
+[![Scattertext Example](figs/fig1.png)]([https://my_org.github.io/atelier_scattertext/figs/fig1.html](https://inalelab.github.io/atelier_scattertext/figs/1_cnews_vs_reste_f%C3%A9v22.html))
+
+
 Sources :
 - Jason S. Kessler. Scattertext: a Browser-Based Tool for Visualizing how Corpora Differ. _ACL System Demonstrations._ 2017. [Article](https://arxiv.org/abs/1703.00565), [github](https://github.com/JasonKessler/scattertext)  
 - INAspeechsegmenter: Doukhan et al. An Open-Source Speaker Gender Detection Framework for Monitoring Gender Equality. _Acoustics Speech and Signal Processing (ICASSP),_  2018.  [github](https://github.com/ina-foss/inaSpeechSegmenter)
