@@ -4,7 +4,11 @@ Support pour un atelier de découverte du package Python [Scattertext](https://g
 
 Scattertext propose une visualisation très simple et intuitive des termes sous forme de nuages de points répartis en fonction de leur fréquence dans deux corpus A et B. Il introduit également une mesure d'association spécifique de termes à une variable. 
 
+### Données
 Le code dans ce dépôt s'appuie sur un jeu de données au format CSV, non fourni, qui porte sur 1 mois x 5 chaînes d'info en continu françaises, incluant la transcription [Whisper](https://github.com/openai/whisper), le genre des locuteurs [Inaspeechsegmenter](https://github.com/ina-foss/inaSpeechSegmenter), ainsi que les notices documentaires décrivant ces programmes. L'accès à ces données est soumis à la signature d'une convention de recherche avec [le lab INA](https://inalelab.hypotheses.org/).
+
+### Code
+Le code présenté durant l'atelier est disponible dans ce [notebook](figs/scattertext.ipynb)
 
 ### Exemple avec CNews (cliquer pour la version interactive)
 Chaque point représente un terme. Les coordonnées représentent la fréquence du terme sur Cnews (axe vertical), et sa fréquence sur les autres chaînes (axe horizontal).
